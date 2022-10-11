@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Movie/style.css" />
+    <!-- <link rel="stylesheet" href="Movie/style.css" /> -->
 
     <title>Filmy</title>
     
@@ -17,30 +17,40 @@
         <label>
           Žánr:
           <select id="select-genre">
-            <option value="životopisný">Źivotopisný</option>
-            <option value="krimi">Krimi</option>
-            <!-- a tak dále... -->
+            <!-- ZDE SE VLOŽÍ SEZNAM DOSTUPNÝCH ŽÁNRŮ FILMŮ V ELEMENTECH OPTION -->
           </select>
         </label>
-        <button type="submit">Vybrat</button>
+        <button id="submit" type="submit">Vybrat</button>
       </form>
       <ul class="movie-list">
-        <li class="movie-detail">
-          <div class="movie-poster">
-            <img 
-              src="https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/162/505/162505167_735db9.jpg"
-              alt="Vykoupení z věznice Shawshank"
-            />
-          </div>
-          <div class="movie-info">
-            <h2 class="movie-title">Vykoupení z věznice Shawshank</h2>
-            <div class="movie-year">Rok vydání: 1994</div>
-            <div class="movie-link">
-              <a href="https://www.csfd.cz/film/2294-vykoupeni-z-veznice-shawshank" target="_blank">Odkaz na CSFD</a>
-            </div>
-          </div>
-        </li>
+        <!-- ZDE SE VLOŽÍ PŘEHLED FILMŮ V ELEMENTECH LI-->
       </ul>
     </div>
   </body>
 </html>
+
+<!--obsah elementu select-genre
+  <option value="životopisný">Źivotopisný</option>
+  <option value="krimi">Krimi</option>
+  ...
+-->
+
+
+<!--obsah elementu movie-list
+
+<li class="movie-detail">
+  <div class="movie-poster">
+    <img 
+      src="https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/162/505/162505167_735db9.jpg"
+      alt="Vykoupení z věznice Shawshank"
+    />
+  </div>
+  <div class="movie-info">
+    <h2 class="movie-title">Vykoupení z věznice Shawshank</h2>
+    <div class="movie-year">Rok vydání: 1994</div>
+    <div class="movie-link">
+      <a href="https://www.csfd.cz/film/2294-vykoupeni-z-veznice-shawshank" target="_blank">Odkaz na CSFD</a>
+    </div>
+  </div>
+</li>
+-->
